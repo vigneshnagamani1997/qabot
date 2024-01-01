@@ -1,0 +1,16 @@
+<section class="container">
+    <div class="row">
+        <div class="col-9">
+            <textarea rows="3" pInputTextarea [(ngModel)]="chatSent" placeholder="Type here or click microphone to speak..."
+            class="w-100"></textarea>
+        </div>
+        <div class="col-1">
+            <p-button icon="pi pi-microphone" *ngIf="!isStarted" (click)="start()"></p-button>
+            <p-button icon="pi pi-microphone" *ngIf="isStarted" class="microphone-started" (click)="stop()"></p-button>
+        </div>
+        <div class="col-2">
+            <p-button label="Sent" icon="pi pi-send" (click)="sentTo()"></p-button>
+            <p-button label="Suggestion" icon="pi pi-send" (click)="sentSuggestion()" *ngIf="isSuggestion"></p-button>
+        </div>
+    </div>
+</section>

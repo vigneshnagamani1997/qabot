@@ -1,0 +1,18 @@
+app-header {
+    display: block;
+    height: 10%;
+}
+app-screenhistory {
+    display: block;
+    height: 70vh;
+    overflow-y: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+app-chat-entry {
+    height: 20%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

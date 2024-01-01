@@ -1,0 +1,12 @@
+<section class="container">
+    <div class="row">
+        <div class="col-12 row" *ngFor="let chat of chatServiceService.chatHistory">
+            <div class="col-6">
+                <p class="receiveChat" *ngIf="chat.receiveChat" [innerHTML]="chat.msg"></p>
+            </div>
+            <div class="col-6">
+                <p class="sentChat" *ngIf="chat.sentChat" [innerHTML]="chat.msg"></p>
+            </div>
+        </div>
+    </div>
+</section>
